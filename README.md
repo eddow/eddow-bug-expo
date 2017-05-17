@@ -22,7 +22,10 @@ node test
 
 ### Behaviour:
 ```
-Error: Cannot find module 'testImp'
+{ rolae: 42,
+testImp: null,
+render: [Function: render],
+staticRenderFns: [] }
 ```
 Also, having a peek in `dist/bndl.ts` reveals the file `testImp.ts` is absent
 ```javascript
