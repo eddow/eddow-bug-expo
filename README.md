@@ -14,7 +14,7 @@ node test
 ```json
 {
 	"rolae": 42,
-	testImp: {
+	"testImp": {
 		"hi": "I am imported"
 	}
 }
