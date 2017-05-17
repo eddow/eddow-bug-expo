@@ -1,0 +1,1 @@
+export default const hi = "I am imported";
