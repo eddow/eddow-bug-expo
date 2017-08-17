@@ -1,14 +1,17 @@
-const {FuseBox, VuePlugin} = require("fuse-box");
+const {FuseBox, VuePlugin, QuantumPlugin} = require("fuse-box");
 const fuse = FuseBox.init({
 	homeDir: "src",
 	output: "dist/$name.js",
 	plugins: [
 		VuePlugin()
 	],
-	cache: false/*,
-	globals: {default: '*'}*/
+	cache: false
 });
 fuse.bundle("bndl")
+	.plugin(
+		QuantumPlugin({
+			target: 'server'
+		}))
 	.instructions('> index.ts');
 
 fuse.run();
