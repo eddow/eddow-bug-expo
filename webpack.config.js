@@ -1,9 +1,10 @@
 var webpack = require("webpack"),
 	path = require("path"),
+	HtmlWebpackPlugin = require('html-webpack-plugin'),
 	VueLoader = require('vue-loader');
 
 module.exports = {
-	mode: 'development',	//This is meant to be bundled afterward anyway
+	mode: 'development',
 	context: path.resolve(__dirname, 'src'),
 	entry: {
 		test: ['./index.ts'],
@@ -43,11 +44,14 @@ module.exports = {
 		}]
 	},
 	plugins: [
+		new HtmlWebpackPlugin({
+			template: path.resolve(__dirname, './src/index.ejs'),
+			title: 'Bug expo'
+		}),
 		new VueLoader.VueLoaderPlugin()
 	],
 	resolve: {
 		alias: {
-			'vue-ripper': path.resolve(__dirname, '../src/')
 		},
 		extensions: [".ts", '.vue']
 	}
