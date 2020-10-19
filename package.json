@@ -4,22 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webpack"
+    "start": "webpack --config test/webpack.test.js"
   },
-  "author": "",
+  "author": "fmdm",
   "license": "ISC",
   "dependencies": {
-    "source-map-loader": "^0.2.4",
-    "ts-loader": "^5.3.0",
-    "typescript": "^2.8.1",
-    "uglify-es": "^3.3.9",
-    "vue": "^2.5.16",
-    "vue-loader": "^15.4.2",
-    "vue-property-decorator": "^6.0.0",
-    "vue-template-compiler": "^2.5.16",
-    "vue-template-es2015-compiler": "^1.6.0",
-    "webpack": "^4.25.1",
-    "webpack-cli": "^3.1.2",
-    "webpack-node-externals": "^1.7.2"
+    "ts-loader": "^8.0.5",
+    "typescript": "^4.0.3",
+    "webpack": "^5.1.3",
+    "webpack-cli": "^4.0.0",
+    "webpack-virtual-modules": "^0.3.2"
   }
 }
