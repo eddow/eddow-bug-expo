@@ -1,2 +1,4 @@
 node_modules
-result
+dist/server
+semantic
+private.ts

@@ -1,0 +1,31 @@
+{
+	"compilerOptions": {
+		"rootDir": ".",
+		"outDir": "./dst/client/",
+		"baseUrl": "./src/client/",
+		"sourceMap": true,
+		"inlineSources": true,
+		"noImplicitAny": false,
+		"module": "ESNext",
+		"moduleResolution": "node",
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"target": "es5",
+		"lib": [
+			"es5",
+			"es6",
+			"es2020",
+			"dom"
+		],
+		"allowSyntheticDefaultImports": true,
+		"resolveJsonModule": true,
+		"typeRoots": ["./node_modules/@types", "./src/object"],
+		"paths": {
+			"@/*": ["./*"],
+			"@obj/*": ["../object/*"],
+			"@config": ["../config"]
+		}
+	},
+	"include": ["src/client/**/*", "src/object/**/*", "src/client/routes", "src/client/components"],
+	"exclude": ["**/*.spec.ts"]
+}
