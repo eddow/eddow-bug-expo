@@ -1,8 +1,10 @@
 # Reproduction
 
 ```sh
-npm run build:server
-npm run serve
+npm run build
 ```
 
-Then access `localhost:4004` or even if you want `localhost:4004/index.html`
+The following error disappears if the script is not a module or if `foo` is not `async` :
+```
+(!) `this` has been rewritten to `undefined`
+```
