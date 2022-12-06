@@ -1,26 +1,18 @@
 {
 	"compilerOptions": {
 		"rootDir": ".",
-		"outDir": "./dst/client/",
-		"baseUrl": "./src/client/",
+		"baseUrl": ".",
 		"sourceMap": true,
 		"inlineSources": true,
 		"noImplicitAny": false,
-		"module": "ESNext",
+		"module": "commonjs",
+		"esModuleInterop": true,
 		"moduleResolution": "node",
-		"emitDecoratorMetadata": true,
 		"experimentalDecorators": true,
-		"target": "es6",
-		"lib": [
-			"es5",
-			"es6",
-			"es2020",
-			"dom"
-		],
-		"allowSyntheticDefaultImports": true,
-		"resolveJsonModule": true,
-		"typeRoots": ["./node_modules/@types"],
-		"types": ["node", "svelte"]
+		"target": "es2020",
+		"lib": ["es2020", "dom"],
+		"types": ["jest", "node"],
+		"typeRoots": ["../node_modules/@types", "."]
 	},
-	"include": ["src/**/*"]
+	"include": ["./**/*.ts", "tests/jest.test.ts"]
 }
