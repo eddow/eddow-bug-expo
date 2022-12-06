@@ -1,3 +1,12 @@
+## Execution
+```
+npm i
+npm test
+```
+
+# Result
+
+```
  *  Executing task: npm run test 
 
 npm WARN config global `--global`, `--local` are deprecated. Use `--location=global` instead.
@@ -30,4 +39,4 @@ Ran all test suites.
 
  *  The terminal process "C:\WINDOWS\System32\cmd.exe /d /c npm run test" terminated with exit code: 1. 
  *  Terminal will be reused by tasks, press any key to close it. 
-
+```
